@@ -8,11 +8,15 @@ import java.util.Map;
 public class ReturnBook {
 
     private Map<String, Book> bookList;
+    private BookRepository bookRepository;
+    public ReturnBook(BookRepository bookRepository){
+        this.bookRepository = bookRepository;
+        bookList = this.bookRepository.getBookList();
+    }
 
     public String returnBook(String command) {
-        bookList = BookRepository.getBookList();
         if (bookList.containsKey(command)){
-            BookRepository.getBookList().get(command).setChecked(false);
+            bookList.get(command).setChecked(false);
         }else {
             return "That is not a valid book to return.";
         };

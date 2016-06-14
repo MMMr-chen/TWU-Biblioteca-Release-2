@@ -1,4 +1,4 @@
-package com.twu.biblioteca.model.moviecommond;
+package com.twu.biblioteca.model;
 
 public class Movie {
     private String rating;

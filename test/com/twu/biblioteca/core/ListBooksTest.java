@@ -1,5 +1,6 @@
 package com.twu.biblioteca.core;
 
+import com.twu.biblioteca.repository.BookRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -11,9 +12,12 @@ import static org.junit.Assert.assertThat;
 public class ListBooksTest {
     @Mock
     private ListBooks listBooks;
+    private BookRepository bookRepository;
+
     @Before
     public void setUp(){
-        listBooks = new ListBooks();
+        bookRepository =new BookRepository();
+        listBooks = new ListBooks(bookRepository);
     }
     @Test
     public void should_print_list(){
