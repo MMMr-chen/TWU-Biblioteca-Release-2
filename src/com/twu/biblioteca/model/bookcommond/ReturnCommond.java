@@ -1,14 +1,16 @@
-package com.twu.biblioteca.model;
+package com.twu.biblioteca.model.bookcommond;
 
 import com.twu.biblioteca.controller.Router;
+import com.twu.biblioteca.model.MyCommand;
+import com.twu.biblioteca.model.QuitCommond;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class CheckOutCommond implements MyCommand {
+public class ReturnCommond implements MyCommand {
     private Map<String,MyCommand> returnRouter = new HashMap<String, MyCommand>(){{
         put("1",new QuitCommond());
-        put("ck",new CheckBookCommond());
+        put("rt",new ReturnBookCommond());
     }};
     @Override
     public String run(String command, Router router) {
@@ -18,7 +20,6 @@ public class CheckOutCommond implements MyCommand {
 
     @Override
     public String getDescription() {
-        return "CheckOutBook";
+        return "ReturnBook";
     }
-
 }

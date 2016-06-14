@@ -1,7 +1,8 @@
-package com.twu.biblioteca.model;
+package com.twu.biblioteca.model.bookcommond;
 
 import com.twu.biblioteca.controller.Router;
 import com.twu.biblioteca.core.CheckOutBook;
+import com.twu.biblioteca.model.MyCommand;
 
 public class CheckBookCommond implements MyCommand {
     @Override
