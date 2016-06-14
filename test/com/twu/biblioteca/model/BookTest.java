@@ -10,7 +10,7 @@ public class BookTest {
     private Book book;
     @Before
     public void setUp(){
-        book = new Book("The Hobbit","Anand Beck","1984");
+        book = new Book("1","The Hobbit","Anand Beck","1984");
     }
     @Test
     public void should_create_correct_book(){
