@@ -13,7 +13,7 @@ public class ListBooks {
         this.bookRepository = bookRepository;
     }
     private Map<String, Book> getList(){
-        return bookRepository.getBookList();
+        return bookRepository.getBookMap();
     }
     public String getString(){
         String result = "Book List:\n";

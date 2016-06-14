@@ -1,6 +1,9 @@
-package com.twu.biblioteca.model;
+package com.twu.biblioteca.model.bookcommond;
 
 import com.twu.biblioteca.controller.Router;
+import com.twu.biblioteca.model.CheckBookCommond;
+import com.twu.biblioteca.model.MyCommand;
+import com.twu.biblioteca.model.QuitCommond;
 import com.twu.biblioteca.repository.BookRepository;
 
 import java.util.HashMap;

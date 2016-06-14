@@ -11,7 +11,7 @@ public class CheckOutBook {
     private Map<String, Book> bookList;
     public CheckOutBook(BookRepository bookRepository){
         this.bookRepository = bookRepository;
-        bookList = this.bookRepository.getBookList();
+        bookList = this.bookRepository.getBookMap();
     }
 
     public String checkOut(String command) {

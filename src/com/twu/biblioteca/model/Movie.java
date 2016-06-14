@@ -1,17 +1,19 @@
 package com.twu.biblioteca.model;
 
 public class Movie {
+    private String id;
     private String rating;
     private String year;
     private String director;
     private String name;
     private boolean isChecked;
 
-    public Movie(String name, String year, String director, String rating){
+    public Movie(String id ,String name, String year, String director, String rating){
         this.name = name;
         this.year = year;
         this.director = director;
         this.rating = rating;
+        this.id = id;
         this.isChecked = false;
 
     }
@@ -38,5 +40,9 @@ public class Movie {
 
     public String getRating() {
         return rating;
+    }
+
+    public String getId() {
+        return id;
     }
 }

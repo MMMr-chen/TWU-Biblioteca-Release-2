@@ -11,7 +11,7 @@ public class ReturnBook {
     private BookRepository bookRepository;
     public ReturnBook(BookRepository bookRepository){
         this.bookRepository = bookRepository;
-        bookList = this.bookRepository.getBookList();
+        bookList = this.bookRepository.getBookMap();
     }
 
     public String returnBook(String command) {

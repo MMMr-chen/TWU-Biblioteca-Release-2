@@ -31,7 +31,7 @@ public class ReturnBookTest {
     public void right_book_should_be_returned(){
         String commond = "3";
         returnBook.returnBook(commond);
-        boolean isChecked = bookRepository.getBookList().get(commond).isChecked();
+        boolean isChecked = bookRepository.getBookMap().get(commond).isChecked();
         assertThat(isChecked,is(false));
     }
 

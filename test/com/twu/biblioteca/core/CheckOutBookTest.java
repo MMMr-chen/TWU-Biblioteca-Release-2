@@ -31,7 +31,7 @@ public class CheckOutBookTest {
     public void right_book_should_be_checked(){
         String commond = "3";
         checkOutBook.checkOut(commond);
-        boolean isChecked = bookRepository.getBookList().get(commond).isChecked();
+        boolean isChecked = bookRepository.getBookMap().get(commond).isChecked();
         assertThat(isChecked,is(true));
     }
 }

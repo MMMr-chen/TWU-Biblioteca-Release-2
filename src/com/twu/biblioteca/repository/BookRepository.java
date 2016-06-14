@@ -11,7 +11,7 @@ public class BookRepository {
         BOOK_MAP.put("2",new Book("2","<<Tom Sawyer>>","Judy Li","2015"));
         BOOK_MAP.put("3",new Book("3","<<Domain Driven Design>>","Eric Evans","2003"));
     }
-    public Map<String,Book> getBookList(){
+    public Map<String,Book> getBookMap(){
         return  BOOK_MAP;
     }
 }

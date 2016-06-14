@@ -1,19 +1,20 @@
 package com.twu.biblioteca.repository;
 
-import com.twu.biblioteca.model.Book;
+import com.twu.biblioteca.model.Movie;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MovieRepository {
-    public static final Map<String, Book> MOVIE_MAP = new HashMap<String , Book>(){{
-        put("1", new Book("1","<<Fellowship of the Ring>>","Yaxuan Evans","2001"));
-        put("2",new Book("2","<<Tom Sawyer>>","Judy Li","2015"));
-        put("3",new Book("3","<<Domain Driven Design>>","Eric Evans","2003"));
+    public Map<String, Movie> MOVIE_MAP = new HashMap<String , Movie>();
 
+    public MovieRepository(){
+        MOVIE_MAP.put("1", new Movie("1","<<Fellowship of the Ring>>","2001","Yaxuan Evans","0"));
+        MOVIE_MAP.put("2",new Movie("2","<<Tom Sawyer>>","2015","Judy Li","10"));
+        MOVIE_MAP.put("3",new Movie("3","<<Domain Driven Design>>","2003","Eric Evans","8"));
+    }
 
-    }};
-    public static Map<String,Book> getBookList(){
+    public  Map<String,Movie> getMovieMap(){
         return MOVIE_MAP;
     }
 }
