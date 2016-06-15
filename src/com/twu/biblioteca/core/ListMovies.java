@@ -18,12 +18,14 @@ public class ListMovies {
         result += String.format("%-10s%-30s%-15s%-20s%-15s\n","Id","Name","Year","Director","Rate");
         result +="*******************************************************************************\n";
         for (Movie movie : movieMap.values()){
+            if(!movie.isChecked()){
             result += String.format("%-10s%-30s%-15s%-20s%-15s\n",
                     movie.getId(),
                     movie.getName(),
                     movie.getYear(),
                     movie.getDirector(),
                     movie.getRating());
+            }
         }
         return result;
     }
