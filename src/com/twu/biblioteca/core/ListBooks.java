@@ -17,14 +17,14 @@ public class ListBooks {
     }
     public String getString(){
         String result = "Book List:\n";
+        result += String.format("%-10s%-30s%-15s%-20s\n","Id","Titile","Author","YearPublished");
+        result +="**********************************************************************\n";
         for (Book book:getList().values()) {
             if (!book.isChecked()) {
-                result += book.getId() + " : " +
-                        book.getTitle() + ',' +
-                        book.getAuthor() + ',' +
-                        book.getAuthor() + ',' +
-                        book.getYearPublished() +
-                        '\n';
+                result += String.format("%-10s%-30s%-15s%-20s\n",book.getId(),
+                        book.getTitle(),
+                        book.getAuthor(),
+                        book.getYearPublished());
             }
         }
         return result;

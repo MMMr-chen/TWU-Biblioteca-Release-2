@@ -2,13 +2,20 @@ package com.twu.biblioteca.model.moviecommond;
 
 import com.twu.biblioteca.controller.Router;
 import com.twu.biblioteca.model.MyCommand;
+import com.twu.biblioteca.model.QuitCommond;
 import com.twu.biblioteca.repository.MovieRepository;
 
-public class ReturnMovie implements MyCommand {
-    private MovieRepository movieRepository;
+import java.util.HashMap;
+import java.util.Map;
 
-    public ReturnMovie(MovieRepository movieRepository) {
+public class ReturnMovieCommond implements MyCommand {
+    private MovieRepository movieRepository;
+    private Map<String,MyCommand> returnRouter = new HashMap<String, MyCommand>();
+
+    public ReturnMovieCommond(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
+        returnRouter.put("1",new QuitCommond());
+        returnRouter.put("2",new ReturnMvCommond());
     }
 
     @Override
@@ -18,6 +25,6 @@ public class ReturnMovie implements MyCommand {
 
     @Override
     public String getDescription() {
-        return "ReturnMovie";
+        return "ReturnMovieCommond";
     }
 }

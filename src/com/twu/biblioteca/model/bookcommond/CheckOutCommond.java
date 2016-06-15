@@ -11,13 +11,12 @@ import java.util.Map;
 
 public class CheckOutCommond implements MyCommand {
     private BookRepository bookRepository;
-    private Map<String,MyCommand> returnRouter = new HashMap<String, MyCommand>(){{
-        put("1",new QuitCommond());
-        put("ck",new CheckBookCommond(bookRepository));
-    }};
+    private Map<String,MyCommand> returnRouter = new HashMap<String, MyCommand>();
 
     public CheckOutCommond(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
+        returnRouter.put("1",new QuitCommond());
+        returnRouter.put("ck",new CheckBookCommond(bookRepository));
     }
 
     @Override

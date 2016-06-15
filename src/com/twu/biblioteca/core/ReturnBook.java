@@ -15,7 +15,7 @@ public class ReturnBook {
     }
 
     public String returnBook(String command) {
-        if (bookList.containsKey(command)){
+        if (bookList.containsKey(command)&&bookList.get(command).isChecked()){
             bookList.get(command).setChecked(false);
         }else {
             return "That is not a valid book to return.";

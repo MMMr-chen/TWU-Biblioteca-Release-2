@@ -19,7 +19,7 @@ public class ReturnBookTest {
     public void should_return_correct_when_book_is_avalible(){
         String commond = "1";
         String result = returnBook.returnBook(commond);
-        assertThat(result,is("Thank you for returning the book."));
+        assertThat(result,is("That is not a valid book to return."));
     }
     @Test
     public void should_return_wrongString_when_book_is_inavalible(){

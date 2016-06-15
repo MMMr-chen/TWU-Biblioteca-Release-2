@@ -13,7 +13,7 @@ public class LibraryController {
     private static final  String LIST_BOOKS = "List Books";
     public LibraryController(Printer printer, Scanner scanner, Router router){
         this.printer = printer;
-        this.scanner =scanner;
+        this.scanner = scanner;
         this.router = router;
     }
     public void operate(String input){
