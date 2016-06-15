@@ -15,7 +15,7 @@ public class ReturnMovieCommond implements MyCommand {
     public ReturnMovieCommond(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
         returnRouter.put("1",new QuitCommond());
-        returnRouter.put("2",new ReturnMvCommond(movieRepository));
+        returnRouter.put("rt",new ReturnMvCommond(movieRepository));
     }
 
     @Override
