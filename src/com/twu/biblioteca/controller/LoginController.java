@@ -1,6 +1,6 @@
 package com.twu.biblioteca.controller;
 
-import com.twu.biblioteca.model.User;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.UserRepository;
 import com.twu.biblioteca.view.Printer;
 

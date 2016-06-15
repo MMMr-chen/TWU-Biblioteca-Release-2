@@ -1,7 +1,6 @@
 package com.twu.biblioteca.controller;
 
 import com.twu.biblioteca.model.MyCommand;
-import com.twu.biblioteca.model.User;
 import com.twu.biblioteca.view.Printer;
 
 import java.util.Map;

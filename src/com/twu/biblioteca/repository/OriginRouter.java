@@ -3,7 +3,7 @@ package com.twu.biblioteca.repository;
 import com.twu.biblioteca.model.ListBookCommond;
 import com.twu.biblioteca.model.MyCommand;
 import com.twu.biblioteca.model.ShowUserCommond;
-import com.twu.biblioteca.model.User;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.model.bookcommond.CheckOutCommond;
 import com.twu.biblioteca.model.bookcommond.ReturnCommond;
 import com.twu.biblioteca.model.moviecommond.CheckOutMovieCommond;

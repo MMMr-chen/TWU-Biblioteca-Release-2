@@ -1,6 +1,6 @@
 package com.twu.biblioteca.repository;
 
-import com.twu.biblioteca.model.User;
+import com.twu.biblioteca.entity.User;
 
 import java.util.HashMap;
 import java.util.Map;

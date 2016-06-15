@@ -2,6 +2,7 @@ package com.twu.biblioteca.model;
 
 import com.twu.biblioteca.controller.Router;
 import com.twu.biblioteca.core.ShowUser;
+import com.twu.biblioteca.entity.User;
 
 import java.util.HashMap;
 import java.util.Map;

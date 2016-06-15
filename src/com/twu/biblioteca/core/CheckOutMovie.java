@@ -1,8 +1,6 @@
 package com.twu.biblioteca.core;
 
-import com.twu.biblioteca.model.Book;
-import com.twu.biblioteca.model.Movie;
-import com.twu.biblioteca.repository.BookRepository;
+import com.twu.biblioteca.entity.Movie;
 import com.twu.biblioteca.repository.MovieRepository;
 
 import java.util.Map;

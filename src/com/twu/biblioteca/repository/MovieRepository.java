@@ -1,6 +1,6 @@
 package com.twu.biblioteca.repository;
 
-import com.twu.biblioteca.model.Movie;
+import com.twu.biblioteca.entity.Movie;
 
 import java.util.HashMap;
 import java.util.Map;

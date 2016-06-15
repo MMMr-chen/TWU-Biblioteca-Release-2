@@ -1,7 +1,6 @@
 package com.twu.biblioteca.core;
 
-import com.twu.biblioteca.model.Book;
-import com.twu.biblioteca.model.User;
+import com.twu.biblioteca.entity.User;
 
 public class ShowUser {
     public ShowUser() {

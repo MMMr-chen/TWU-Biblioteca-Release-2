@@ -3,7 +3,7 @@ package com.twu.biblioteca;
 import com.twu.biblioteca.controller.LibraryController;
 import com.twu.biblioteca.controller.LoginController;
 import com.twu.biblioteca.controller.Router;
-import com.twu.biblioteca.model.User;
+import com.twu.biblioteca.entity.User;
 import com.twu.biblioteca.repository.BookRepository;
 import com.twu.biblioteca.repository.MovieRepository;
 import com.twu.biblioteca.repository.OriginRouter;

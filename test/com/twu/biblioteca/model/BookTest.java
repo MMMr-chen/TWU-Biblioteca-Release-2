@@ -1,5 +1,6 @@
 package com.twu.biblioteca.model;
 
+import com.twu.biblioteca.entity.Book;
 import org.junit.Before;
 import org.junit.Test;
 

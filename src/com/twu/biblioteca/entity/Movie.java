@@ -1,4 +1,4 @@
-package com.twu.biblioteca.model;
+package com.twu.biblioteca.entity;
 
 public class Movie {
     private String id;
