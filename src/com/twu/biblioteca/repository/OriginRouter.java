@@ -2,6 +2,8 @@ package com.twu.biblioteca.repository;
 
 import com.twu.biblioteca.model.ListBookCommond;
 import com.twu.biblioteca.model.MyCommand;
+import com.twu.biblioteca.model.ShowUserCommond;
+import com.twu.biblioteca.model.User;
 import com.twu.biblioteca.model.bookcommond.CheckOutCommond;
 import com.twu.biblioteca.model.bookcommond.ReturnCommond;
 import com.twu.biblioteca.model.moviecommond.CheckOutMovieCommond;
@@ -13,13 +15,14 @@ import java.util.Map;
 
 public class OriginRouter {
     private Map<String,MyCommand> ORIGIN_ROUTER = new HashMap<String, MyCommand>();
-    public OriginRouter(BookRepository bookRepository, MovieRepository movieRepository){
+    public OriginRouter(BookRepository bookRepository, MovieRepository movieRepository, User currentUser){
         ORIGIN_ROUTER.put("1",new ListBookCommond(bookRepository));
         ORIGIN_ROUTER.put("2",new CheckOutCommond(bookRepository));
         ORIGIN_ROUTER.put("3",new ReturnCommond(bookRepository));
         ORIGIN_ROUTER.put("4",new ListMovieCommond(movieRepository));
         ORIGIN_ROUTER.put("5",new CheckOutMovieCommond(movieRepository));
         ORIGIN_ROUTER.put("6",new ReturnMovieCommond(movieRepository));
+        ORIGIN_ROUTER.put("7",new ShowUserCommond(currentUser));
     }
     public Map<String, MyCommand> getOriginRouter(){
         return ORIGIN_ROUTER;
