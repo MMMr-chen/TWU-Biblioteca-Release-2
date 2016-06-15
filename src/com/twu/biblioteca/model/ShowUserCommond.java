@@ -23,6 +23,6 @@ public class ShowUserCommond implements MyCommand {
 
     @Override
     public String getDescription() {
-        return null;
+        return "ShowUser";
     }
 }

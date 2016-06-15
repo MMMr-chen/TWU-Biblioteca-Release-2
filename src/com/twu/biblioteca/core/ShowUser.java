@@ -8,10 +8,10 @@ public class ShowUser {
     }
 
     public String show(User currentUser) {
-        String result = "Book List:\n";
-        result += String.format("%-20s%-30s%-20s%\n", "Name", "Email", "Phone");
+        String result = "User Information:\n";
+        result += String.format("%-20s%-30s%-20s\n", "Name", "Email", "Phone");
         result += "**********************************************************\n";
-        result += String.format("%-10s%-30s%-15s%-20s\n",
+        result += String.format("%-20s%-30s%-20s\n",
                 currentUser.getName(),
                 currentUser.getEmail(),
                 currentUser.getPhone());
